@@ -7,20 +7,13 @@ This repository contains a custom PyTorch GPU implementation to train a numerica
 ## 1D Heat Equation
 
 The particular PDE considered is defined for $t\in[0,1]$ and $\Omega = [0,1]$:
-$$
-\begin{align}
-    \partial_t u(t, x) = 0.2 \partial_{xx} u(t,x)&, \qquad (t,x)\in (0,1] \times \Omega \\
-    u(0, x) = u_0(x) = \sin(\pi x)&, \qquad x\in \Omega \\
-    u(t, 0) = u(t,1) = u_b(t,x) \equiv 0 &, \qquad (t, x) \in (0, T] \times \partial \Omega.
-\end{align}
-$$
+$$\partial_t u(t, x) = 0.2 \partial_{xx} u(t,x), \qquad (t,x)\in (0,1] \times \Omega $$
+$$u(0, x) = \sin(\pi x), \qquad x\in \Omega$$
+$$u(t, 0) = u(t,1) = u_b(t,x) \equiv 0, \qquad (t, x) \in (0, T] \times \partial \Omega.$$
 
 The PDE admits the following solution:
-$$
-\begin{equation}
-    u^*(t, x) = e^{(-0.2\pi^2 t)}\sin(\pi x).
-\end{equation}
-$$
+$$u^*(t, x) = e^{(-0.2\pi^2 t)}\sin(\pi x).$$
+
 
 ![Heat Equation Solution](./figs/heat_eq_soln.png)
 
