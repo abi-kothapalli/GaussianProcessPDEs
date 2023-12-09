@@ -4,7 +4,7 @@ Gaussian Processes for Bayesian Modeling of Solutions to Partial Differential Eq
 
 This repository contains a custom PyTorch GPU implementation to train a numerical GP (using backward Euler scheme) to model solutions to the one-dimensional heat equation. Also contains a PINN implementation for performance benchmarking purposes.
 
-## 1D Heat Equation
+# 1D Heat Equation
 
 The particular PDE considered is defined for $t\in[0,1]$ and $\Omega = [0,1]$:
 $$\partial_t u(t, x) = 0.2 \partial_{xx} u(t,x), \qquad (t,x)\in (0,1] \times \Omega $$
@@ -17,9 +17,9 @@ $$u^*(t, x) = e^{(-0.2\pi^2 t)}\sin(\pi x).$$
 
 ![Heat Equation Solution](./figs/heat_eq_soln.png)
 
-## Results
+# Results
 
-### Gaussian Process
+## Gaussian Process
 
 ![GP Construction](./figs/gp-3d.gif)
 
@@ -31,7 +31,7 @@ $$u^*(t, x) = e^{(-0.2\pi^2 t)}\sin(\pi x).$$
 | ![](figs/gp_05.png) | ![](figs/gp_1.png) |
 
 
-### PINN
+## PINN
 
 ![PINN Training](./figs/pinn.gif)
 
