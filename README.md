@@ -1,6 +1,6 @@
 # GaussianProcessPDEs
 
-Gaussian Processes for Bayesian Modeling of Solutions to Partial Differential Equations – Final Project for CS 6362: Advanced Machine Learning
+Gaussian Processes for Bayesian Modeling of Solutions to Partial Differential Equations – Final Project for CS 6362: Advanced Machine Learning. _(Manuscript Available Upon Request)._
 
 This repository contains a custom PyTorch GPU implementation to train a numerical GP (using backward Euler scheme) to model solutions to the one-dimensional heat equation. Also contains a PINN implementation for performance benchmarking purposes.
 
